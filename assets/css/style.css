@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  
 }
 .navbar ul {
   margin: auto;
@@ -306,6 +307,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 992px) {
+  .navbar {
+    justify-content: center;
+align-items: center;
+text-align: end;
+padding-right: 52px;
+  }
+  
+}
+
+
+
 /**
 * Mobile Navigation 
 */
@@ -321,6 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+    width: 100%;
   }
 
   .navbar ul {
@@ -616,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #about p {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -631,6 +645,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  width: auto;
 }
 #speakers .speaker .details {
   background: rgba(6, 12, 34, 0.76);
@@ -935,7 +950,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #f82249;
+  /* border: 1px solid #f82249; */
 }
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #f82249;
@@ -945,15 +960,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 992px) {
   #gallery .swiper-wrapper {
-    padding: 40px 0;
+    /* padding: 40px 0; */
+    height: 450px;
   }
   #gallery .swiper-slide-active {
-    border: 5px solid #f82249;
-    padding: 4px;
+    /* border: 5px solid #f82249; */
+    /* padding: 4px; */
     background: #fff;
     z-index: 1;
     transform: scale(1.15);
-    margin-top: 6px;
+    /* margin-top: 6px; */
   }
 }
 
@@ -1320,12 +1336,12 @@ h1, h2, h3, h4, h5, h6 {
 #footer .footer-top .footer-info img {
   height: 200px;
   /* margin-bottom: 10px; */
-  margin-top: -66px;
+  margin-top: 0px;
   margin-bottom: -39px;
 }
 #footer .footer-top .footer-info p {
   font-size: 14px;
-  line-height: 24px;
+  /* line-height: 24px; */
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -1361,8 +1377,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 12px;
   border-bottom: 2px solid #f82249;
 }
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
+#footer .footer-top .footer-links p {
+  margin-bottom: 10px;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1445,12 +1461,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* i */
-@media screen and (max-width : 500px){
+/* @media screen and (max-width : 500px){
   #logo
 {
 padding: 95px;
 }
-}
+} */
 
 
 #hero {
@@ -1691,18 +1707,7 @@ padding: 0px 10px;
 
 
 
-.img1
-{
-  background: url("../img/portfolio/wedd.jpg") no-repeat center center;
-  background-size: cover;
-  /* background-image: url(); */
-  /* background-color: gray; */
-  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ; 
-  width: 450px; 
-  height: 500px;
-}
-
-
+/* 
  .overlays:before {
   display: block;
   content: "";
@@ -1736,7 +1741,7 @@ height: 500px;
 
 
 }
-
+ */
 
 /* .img1 .overlay {
   position: absolute;
@@ -1750,6 +1755,20 @@ height: 500px;
 } */
 
 
+
+.img1
+{
+  background: url("../img/portfolio/wedd.jpg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ; 
+  width: 400px; 
+  height: 400px;
+}
+
+
+
 .img2
 {
   background: url("../img/portfolio/shoot.jpeg") no-repeat center center;
@@ -1757,8 +1776,8 @@ height: 500px;
   /* background-image: url(); */
   /* background-color: gray; */
   border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ; 
-  width: 450px; 
-  height: 500px;
+  width: 400px; 
+  height: 400px;
 }
 
 .img3
@@ -1768,8 +1787,75 @@ height: 500px;
   /* background-image: url(); */
   /* background-color: gray; */
   border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ;
-   width: 450px; 
-   height: 500px;
+   width: 400px; 
+   height: 400px;
+}
+
+.img4
+{
+  background: url("../img/portfolio/shoot.jpeg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ; 
+  width: 400px; 
+  height: 400px;
+}
+
+.img5
+{
+  background: url("../img/portfolio/enag.jpg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ;
+   width: 400px; 
+   height: 400px;
+}
+
+.img6
+{
+  background: url("../img/portfolio/shoot.jpeg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ; 
+  width: 400px; 
+  height: 400px;
+}
+
+.img7
+{
+  background: url("../img/portfolio/enag.jpg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ;
+   width: 400px; 
+   height: 400px;
+}
+
+
+.img8
+{
+  background: url("../img/portfolio/shoot.jpeg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ; 
+  width: 400px; 
+  height: 400px;
+}
+
+.img9
+{
+  background: url("../img/portfolio/enag.jpg") no-repeat center center;
+  background-size: cover;
+  /* background-image: url(); */
+  /* background-color: gray; */
+  border-radius: 59% 41% 45% 55% / 30% 20% 80% 70% ;
+   width: 400px; 
+   height: 400px;
 }
 
 
@@ -1778,15 +1864,39 @@ height: 500px;
 @media screen and (max-width : 400px) {
   
   .img1  {
-   width: 370px!important;
+   width: 100%!important;
   }
   .img2  {
-    width: 370px!important;
+    width: 100%!important;
   } 
   .img3  {
-    width: 370px!important;
+    width: 100%!important;
   } 
   
+
+  .img4  {
+    width: 100%!important;
+   }
+   .img5  {
+     width: 100%!important;
+   } 
+   .img6  {
+     width: 100%!important;
+   } 
+  
+   
+
+
+   .img7  {
+    width: 100%!important;
+   }
+   .img8  {
+     width: 100%!important;
+   } 
+   .img9  {
+     width: 100%!important;
+   } 
+   
   
   }
   
@@ -1878,3 +1988,22 @@ height: 500px;
 
 
 
+
+
+ .instagram-hover-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(252, 96, 96, 0.9); */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  z-index: 99;
+  font-size: 25px;
+}
